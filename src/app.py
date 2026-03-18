@@ -11,6 +11,9 @@ for p in (_root, _src):
 import streamlit as st
 from legal_searcher import legal_searcher
 from law_automation import LawAutomation
+# from sendgrid import send_email
+from homepage_calendar import show_calendar
+from billing_payment import billing_payment
 
 
 law_automation = LawAutomation()
@@ -22,16 +25,19 @@ def main():
 
     st.title("Roman Kostenko's Law Office")
 
-    tab_home, tab_research, tab_billing = st.tabs([
-        "Home",
-        "Legal Research & Writing",
+    tab_calendar, tab_research,tab_email, tab_billing = st.tabs([
+        "Calendar",
+        "Legal Research, Email Writing, and Petition Drafting",
+        "Send Email",
         "Billing & Payment"
     ])
 
-    with tab_home:
-        home_page()
+    with tab_calendar:
+        show_calendar()
     with tab_research:
         legal_searcher()
+    with tab_email:
+        st.header("email")
     with tab_billing:
         billing_payment()
 
@@ -78,56 +84,56 @@ def home_page():
 #         law_automation.store_research_and_writing(client_id, research_text, writing_text)
 #         st.success("Research and writing saved successfully!")
 
-def billing_payment():
-    st.header("Billing and Payment System")
+# def billing_payment():
+#     st.header("Billing and Payment System")
 
-    with st.form("manage_client"):
-        name = st.text_input("Name")
-        email = st.text_input("Email")
-        phone = st.text_input("Phone")
-        address = st.text_input("Address")
-        city = st.text_input("City")
-        state = st.text_input("State")
-        zip_code = st.text_input("ZIP")
-        country = st.text_input("Country")
-        case_number = st.text_input("Case Number")
-        case_type = st.text_input("Case Type")
-        case_status = st.text_input("Case Status")
-        case_description = st.text_area("Case Description")
-        submit_client = st.form_submit_button("Add Client")
+#     with st.form("manage_client"):
+#         name = st.text_input("Name")
+#         email = st.text_input("Email")
+#         phone = st.text_input("Phone")
+#         address = st.text_input("Address")
+#         city = st.text_input("City")
+#         state = st.text_input("State")
+#         zip_code = st.text_input("ZIP")
+#         country = st.text_input("Country")
+#         case_number = st.text_input("Case Number")
+#         case_type = st.text_input("Case Type")
+#         case_status = st.text_input("Case Status")
+#         case_description = st.text_area("Case Description")
+#         submit_client = st.form_submit_button("Add Client")
 
-        if submit_client:
-            client_id = law_automation.add_client(name, email, phone, address, city, state, zip_code, country, case_number, case_type, case_status, case_description)
-            st.success(f"Client added with ID {client_id}")
+#         if submit_client:
+#             client_id = law_automation.add_client(name, email, phone, address, city, state, zip_code, country, case_number, case_type, case_status, case_description)
+#             st.success(f"Client added with ID {client_id}")
 
-    client_id = st.number_input("Client ID for Billing", min_value=0, step=1)
-    if client_id:
-        client_data = law_automation.view_client(client_id)
-        if client_data:
-            st.write(client_data)
+#     client_id = st.number_input("Client ID for Billing", min_value=0, step=1)
+#     if client_id:
+#         client_data = law_automation.view_client(client_id)
+#         if client_data:
+#             st.write(client_data)
 
-            with st.form("billing_services"):
-                service_name = st.text_input("Service Name")
-                service_description = st.text_input("Service Description")
-                service_price = st.number_input("Service Price", min_value=0.0)
-                service_quantity = st.number_input("Service Quantity", min_value=1)
-                service_date = st.date_input("Service Date").isoformat()
-                submit_service = st.form_submit_button("Add Billing Service")
+#             with st.form("billing_services"):
+#                 service_name = st.text_input("Service Name")
+#                 service_description = st.text_input("Service Description")
+#                 service_price = st.number_input("Service Price", min_value=0.0)
+#                 service_quantity = st.number_input("Service Quantity", min_value=1)
+#                 service_date = st.date_input("Service Date").isoformat()
+#                 submit_service = st.form_submit_button("Add Billing Service")
     
-                if submit_service:
-                    law_automation.add_billing_service(client_id, service_name, service_description, service_price, service_quantity, service_date)
-                    st.success("Billing service added successfully!")
+#                 if submit_service:
+#                     law_automation.add_billing_service(client_id, service_name, service_description, service_price, service_quantity, service_date)
+#                     st.success("Billing service added successfully!")
 
-            if st.button("Generate Invoice PDF"):
-                invoice_path = law_automation.generate_invoice_pdf(client_id)
-                if invoice_path:
-                    st.success(f"Invoice generated at {invoice_path}")
-                else:
-                    st.warning("Total price is below the threshold to generate an invoice.")
+#             if st.button("Generate Invoice PDF"):
+#                 invoice_path = law_automation.generate_invoice_pdf(client_id)
+#                 if invoice_path:
+#                     st.success(f"Invoice generated at {invoice_path}")
+#                 else:
+#                     st.warning("Total price is below the threshold to generate an invoice.")
 
-            if st.button("Send Payment Reminder"):
-                law_automation.send_payment_reminder(client_id)
-                st.success("Payment reminder sent successfully!")
+#             if st.button("Send Payment Reminder"):
+#                 law_automation.send_payment_reminder(client_id)
+#                 st.success("Payment reminder sent successfully!")
 
 if __name__ == "__main__":
     main()

@@ -14,3 +14,42 @@
 .stTabs div[data-baseweb="tab-highlight"] {
     background-color: transparent;
 }
+
+/* Chat container focus state */
+.st-emotion-cache-6mn6c9:focus-within {
+    outline: none !important;
+    border-color: black !important;
+    box-shadow: 0 0 0 1px black !important;
+}
+
+/* Make code blocks (used for responses) look like normal text but keep copy icon */
+.stCode code {
+    font-family: inherit !important;
+    font-size: 0.95rem !important;
+    background-color: transparent !important;
+    white-space: pre-wrap !important;   /* preserve newlines but wrap long lines */
+    word-break: break-word !important;  /* break very long words/URLs if needed */
+    margin: 0 !important;
+    font-family: Source Sans, sans-serif !important;
+    font-weight: 100 900;
+    font-style: normal;
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@100..900&display=swap') format('woff2');
+}
+.stCode {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+/* Make primary buttons green */
+#update_client_button {
+    background-color: #22c55e !important;  /* green */
+    border-color: #16a34a !important;
+    color: white !important;
+}
+/* Make secondary buttons gray */
+#delete_client_button {
+    background-color: red !important;  /* gray */
+    border-color: red!important;
+    color: white !important;
+}
