@@ -1,15 +1,54 @@
 [
   {
+    "id": 1,
     "client_index": 0,
     "client_name": "Jada",
     "client_email": "jiadaouyang@gmail.com",
-    "date": "2026-03-16",
-    "ee": "fff",
+    "date": "2026-03-20",
+    "ee": "rrr",
     "activity": "rr",
-    "description": "rr",
-    "rate": 290.0,
-    "hours": 0.5,
-    "line_total": 145.0,
-    "id": 2
+    "description": "gugu",
+    "rate": 98.0,
+    "hours": 9.0,
+    "line_total": 882.0
+  },
+  {
+    "id": 2,
+    "client_index": 0,
+    "client_name": "Jada",
+    "client_email": "jiadaouyang@gmail.com",
+    "date": "2026-03-20",
+    "ee": "court",
+    "activity": "2026/03/07",
+    "description": "hi",
+    "rate": 98.0,
+    "hours": 9.0,
+    "line_total": 882.0
+  },
+  {
+    "id": 3,
+    "client_index": 0,
+    "client_name": "Jada",
+    "client_email": "jiadaouyang@gmail.com",
+    "date": "2026-03-20",
+    "ee": "2026/03/07",
+    "activity": "fff",
+    "description": "hi",
+    "rate": 89.0,
+    "hours": 9.0,
+    "line_total": 801.0
+  },
+  {
+    "id": 4,
+    "client_index": 0,
+    "client_name": "Jada",
+    "client_email": "jiadaouyang@gmail.com",
+    "date": "2026-03-20",
+    "ee": "78",
+    "activity": "rr",
+    "description": "hi",
+    "rate": 908.0,
+    "hours": 7.0,
+    "line_total": 6356.0
   }
 ]

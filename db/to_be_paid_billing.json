@@ -1,0 +1,250 @@
+[
+  {
+    "invoice_number": "39899",
+    "client_index": 0,
+    "client_name": "Jada",
+    "client_email": "jiadaouyang@gmail.com",
+    "invoice_pdf": "/Users/a14809/amex/law_automation/db/statements/billing_2026-03-20_Jada_invoice_39899.pdf",
+    "invoice_date": "2026-03-20",
+    "payment_deadline": "2026-04-03",
+    "status": "unpaid",
+    "total_amount": 1450.0,
+    "billings": [
+      {
+        "id": 1,
+        "client_index": 0,
+        "client_name": "Jada",
+        "client_email": "jiadaouyang@gmail.com",
+        "date": "2026-03-20",
+        "ee": "2hi",
+        "activity": "h",
+        "description": "joi",
+        "rate": 290.0,
+        "hours": 5.0,
+        "line_total": 1450.0
+      }
+    ]
+  },
+  {
+    "invoice_number": "45533",
+    "client_index": 0,
+    "client_name": "Jada",
+    "client_email": "jiadaouyang@gmail.com",
+    "invoice_pdf": "/Users/a14809/amex/law_automation/db/statements/billing_2026-03-20_Jada_invoice_45533.pdf",
+    "invoice_date": "2026-03-20",
+    "payment_deadline": "2026-04-03",
+    "status": "unpaid",
+    "total_amount": 1450.0,
+    "billings": [
+      {
+        "id": 1,
+        "client_index": 0,
+        "client_name": "Jada",
+        "client_email": "jiadaouyang@gmail.com",
+        "date": "2026-03-20",
+        "ee": "court",
+        "activity": "4809381502",
+        "description": "hio",
+        "rate": 290.0,
+        "hours": 5.0,
+        "line_total": 1450.0
+      }
+    ]
+  },
+  {
+    "invoice_number": "17784",
+    "client_index": 0,
+    "client_name": "Jada",
+    "client_email": "jiadaouyang@gmail.com",
+    "invoice_pdf": "/Users/a14809/amex/law_automation/db/statements/billing_2026-03-20_Jada_invoice_17784.pdf",
+    "invoice_date": "2026-03-20",
+    "payment_deadline": "2026-04-03",
+    "status": "unpaid",
+    "total_amount": 3105.0,
+    "billings": [
+      {
+        "id": 1,
+        "client_index": 0,
+        "client_name": "Jada",
+        "client_email": "jiadaouyang@gmail.com",
+        "date": "2026-03-20",
+        "ee": "345",
+        "activity": "345",
+        "description": "345",
+        "rate": 345.0,
+        "hours": 9.0,
+        "line_total": 3105.0
+      }
+    ]
+  },
+  {
+    "invoice_number": "76245",
+    "client_index": 0,
+    "client_name": "Jada",
+    "client_email": "jiadaouyang@gmail.com",
+    "invoice_pdf": "/Users/a14809/amex/law_automation/db/statements/billing_2026-03-20_Jada_invoice_76245.pdf",
+    "invoice_date": "2026-03-20",
+    "payment_deadline": "2026-04-03",
+    "status": "unpaid",
+    "total_amount": 450.0,
+    "billings": [
+      {
+        "id": 1,
+        "client_index": 0,
+        "client_name": "Jada",
+        "client_email": "jiadaouyang@gmail.com",
+        "date": "2026-03-20",
+        "ee": "court",
+        "activity": "2026/03/07",
+        "description": "h",
+        "rate": 90.0,
+        "hours": 5.0,
+        "line_total": 450.0
+      }
+    ]
+  },
+  {
+    "invoice_number": "14828",
+    "client_index": 0,
+    "client_name": "Jada",
+    "client_email": "jiadaouyang@gmail.com",
+    "invoice_pdf": "/Users/a14809/amex/law_automation/db/statements/billing_2026-03-20_Jada_invoice_14828.pdf",
+    "invoice_date": "2026-03-20",
+    "payment_deadline": "2026-04-03",
+    "status": "unpaid",
+    "total_amount": 13572.0,
+    "billings": [
+      {
+        "id": 1,
+        "client_index": 0,
+        "client_name": "Jada",
+        "client_email": "jiadaouyang@gmail.com",
+        "date": "2026-03-20",
+        "ee": "court",
+        "activity": "Scottsdale",
+        "description": "hi",
+        "rate": 900.0,
+        "hours": 6.0,
+        "line_total": 5400.0
+      },
+      {
+        "id": 2,
+        "client_index": 0,
+        "client_name": "Jada",
+        "client_email": "jiadaouyang@gmail.com",
+        "date": "2026-03-20",
+        "ee": "jjjj",
+        "activity": "rrr",
+        "description": "hi",
+        "rate": 908.0,
+        "hours": 9.0,
+        "line_total": 8172.0
+      }
+    ]
+  },
+  {
+    "invoice_number": "28448",
+    "client_index": 0,
+    "client_name": "Jada",
+    "client_email": "jiadaouyang@gmail.com",
+    "invoice_pdf": "/Users/a14809/amex/law_automation/db/statements/billing_2026-03-20_Jada_invoice_28448.pdf",
+    "invoice_date": "2026-03-20",
+    "payment_deadline": "2026-04-03",
+    "status": "unpaid",
+    "total_amount": 7264.0,
+    "billings": [
+      {
+        "id": 1,
+        "client_index": 0,
+        "client_name": "Jada",
+        "client_email": "jiadaouyang@gmail.com",
+        "date": "2026-03-20",
+        "ee": "court",
+        "activity": "2026/03/07",
+        "description": "hihi",
+        "rate": 908.0,
+        "hours": 8.0,
+        "line_total": 7264.0
+      }
+    ]
+  },
+  {
+    "invoice_number": "90543",
+    "client_index": 0,
+    "client_name": "Jada",
+    "client_email": "jiadaouyang@gmail.com",
+    "invoice_pdf": "/Users/a14809/amex/law_automation/db/statements/billing_2026-03-20_Jada_invoice_90543.pdf",
+    "invoice_date": "2026-03-20",
+    "payment_deadline": "2026-04-03",
+    "status": "paid",
+    "total_amount": 2030.0,
+    "billings": [
+      {
+        "id": 1,
+        "client_index": 0,
+        "client_name": "Jada",
+        "client_email": "jiadaouyang@gmail.com",
+        "date": "2026-03-20",
+        "ee": "2:11pm",
+        "activity": "2026/03/07",
+        "description": "gu",
+        "rate": 290.0,
+        "hours": 7.0,
+        "line_total": 2030.0
+      }
+    ],
+    "paid_date": "2026-03-20"
+  },
+  {
+    "invoice_number": "51029",
+    "client_index": 1,
+    "client_name": "Labubu",
+    "client_email": "labubu@gmail.com",
+    "invoice_pdf": "/Users/a14809/amex/law_automation/db/statements/billing_2026-03-20_Labubu_invoice_51029.pdf",
+    "invoice_date": "2026-03-20",
+    "payment_deadline": "2026-04-03",
+    "status": "unpaid",
+    "total_amount": 6356.0,
+    "billings": [
+      {
+        "id": 2,
+        "client_index": 1,
+        "client_name": "Labubu",
+        "client_email": "labubu@gmail.com",
+        "date": "2026-03-20",
+        "ee": "uj",
+        "activity": "hio",
+        "description": "jiu",
+        "rate": 908.0,
+        "hours": 7.0,
+        "line_total": 6356.0
+      }
+    ]
+  },
+  {
+    "invoice_number": "60986",
+    "client_index": 1,
+    "client_name": "Labubu",
+    "client_email": "labubu@gmail.com",
+    "invoice_pdf": "/Users/a14809/amex/law_automation/db/statements/billing_2026-03-20_Labubu_invoice_60986.pdf",
+    "invoice_date": "2026-03-20",
+    "payment_deadline": "2026-04-03",
+    "status": "unpaid",
+    "total_amount": 4540.0,
+    "billings": [
+      {
+        "id": 2,
+        "client_index": 1,
+        "client_name": "Labubu",
+        "client_email": "labubu@gmail.com",
+        "date": "2026-03-20",
+        "ee": "drt",
+        "activity": "gtr",
+        "description": "rg",
+        "rate": 908.0,
+        "hours": 5.0,
+        "line_total": 4540.0
+      }
+    ]
+  }
+]

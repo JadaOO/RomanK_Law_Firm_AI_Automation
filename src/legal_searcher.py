@@ -28,13 +28,7 @@ def legal_searcher():
     Tones and style of the email messages should be professional and respectful.
 
 
-    Alway put my details at the end of the email:
-    My Name: Roman Kostenko
-    My Address:Law Office of Roman A. Kostenko, P.L.C.
-    202 E. Earll Drive, Suite 490
-    Phoenix, Arizona 85012
-    Phone: (602) 265-1987
-    Fax: (480) 550-8733
+    Put {ATTORNEY_NAME} {ATTORNEY_ADDRESS} {ATTORNEY_PHONE} {ATTORNEY_EMAIL} at the end of the email:
     """
     st.write("Hi Roman, how can I help you today?")
 
@@ -44,9 +38,34 @@ def legal_searcher():
     for msg in st.session_state.messages:
         st.chat_message(msg["role"]).write(msg["content"]) 
 
-    prompt = st.chat_input("legal research, draft petitions, write emails and more...")
+    # Reliable inline row: + popover (left) + chat input (middle) + send button (right)
+    with st.form("legal_chat_inline_form", clear_on_submit=True):
+        col_add, col_input, col_send = st.columns([1, 8, 1.4])
+        with col_add:
+            with st.popover("➕"):
+                st.markdown("📎 **Add Photo & Files**")
+                uploaded = st.file_uploader(
+                    "Add Photo & Files",
+                    accept_multiple_files=True,
+                    type=None,
+                    key="legal_searcher_uploads",
+                    label_visibility="collapsed",
+                )
+                if uploaded:
+                    st.session_state["legal_searcher_uploaded_files"] = [f.name for f in uploaded]
+                    st.caption(f"Selected: {', '.join(st.session_state['legal_searcher_uploaded_files'])}")
+        with col_input:
+            prompt = st.text_input(
+                "Message",
+                placeholder="legal research, draft petitions, write emails and more...",
+                key="legal_prompt_inline",
+                label_visibility="collapsed",
+            )
+        with col_send:
+            submitted = st.form_submit_button("Send")
 
-    if prompt:
+    if submitted and prompt.strip():
+        prompt = prompt.strip()
         st.chat_message("user").write(prompt)
 
         with st.spinner("Researching Arizona law..."):
